@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="utf-8">
+		<!--为了确保适当的绘制和触屏缩放，需要在<head>之中添加viewport元数据标签。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!--在移动设备浏览器上，通过为viewport meta标签添加user-	scalable=no可以禁用其缩放（zooming）功能。这样禁用缩放功能后，用户只能滚动屏幕，就能让你的网站看上去更像原生应用的感觉。-->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		<title>601尼玛粽</title>
+		<link rel="stylesheet"  href="../css/bootstrap/bootstrap.min.css">
+		<link rel="stylesheet"  href="../css/metronic/style-metronic.css">
+		<script type="text/javascript" src="../javascript/plugin/jquery/jquery-1.10.2.min.js"></script>
+		<script type="text/javascript" src="../javascript/plugin/bootstrap/bootstrap.min.js"></script>
+		<script type="text/javascript" src="../javascript/plugin/angularjs-1.2.9/angular.min.js"></script>
+		<script type="text/javascript" src="../javascript/plugin/angularjs-1.2.9/angular-sanitize.min.js"></script>
+
+		<script type="text/javascript" src="../javascript/app/utils/dateUtil.js"></script>
+
+		<script type="text/javascript" src="../javascript/app/appCore.js"></script>
+		<script type="text/javascript" src="../javascript/app/filters/contentFilter.js"></script>
+		<script type="text/javascript" src="../javascript/app/filters/trustFilter.js"></script>
+		<script type="text/javascript" src="../javascript/app/services/socketService.js"></script>
+		<script type="text/javascript" src="../javascript/app/controllers/talksController.js"></script>
+	</head>
+	<body>
+		<div ng-controller="talksController" class="col-md-8 col-sm-12 col-xs-12">
+			<div>
+				<label>welcome </label>
+				<input ng-model="user">
+			</div>
+			<p id="test">{{testtext}}</p>
+			<img  ng-src="{{testimg}}" style="width:500px;" id="testimg">
+			<div id="talkContents" class="list-group">
+				<div class="row list-group-item list-group-item-noline" ng-repeat="talk in talks">
+					<div class="headImage col-md-1 col-xs-2  text-center" ng-class="{'pull-right':talk.isMe}" style="padding-top: 10px">
+						<img ng-src="{{talk.img}}" class="text-center" style="width: 40px;height: 40px;">			
+						<p class="text-center">{{talk.name}}</p>
+					</div>
+					<div class="col-md-11 col-xs-10" ng-class="{'alert-warning':talk.isMe,'alert-success':!talk.isMe}" style="min-height:70px">
+						<b>{{talk.time}}</b>
+						<p ng-bind-html="talk.content|crlfFilter"></p>
+					</div>
+				</div>
+			</div>
+			<div id="toolBar" class="form-inline">
+				<div class="form-group col-md-12 col-xs-12">
+					<textarea  class="col-md-10 col-sm-10 col-xs-9 form-controll"  placeholder="please enter the message" rows="3" style="resize: none" ng-model="msg"></textarea>
+					<button class="btn btn-primary col-md-2 col-sm-2 col-xs-3" style="height: 66px" ng-click="sendMsg()">send</button>
+				</div>
+				
+				
+			</div>
+		</div>
+	</body>
+</html>
