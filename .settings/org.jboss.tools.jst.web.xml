@@ -1,1 +1,89 @@
-<?xml version="1.0" encoding="UTF-8"?><file-systems application-name="MyApp" model-entity="FileSystems" VERSION="2.0.0" workspace-home="./src/main/webapp/WEB-INF"><file-system model-entity="FileSystemFolder" location="%workspace.home%" NAME="WEB-INF"/><file-system model-entity="FileSystemFolder" info="Content-Type=Web" location="%workspace.home%/.." NAME="WEB-ROOT"/><file-system model-entity="FileSystemFolder" location="%workspace.home%/../../java" NAME="src"/><file-system model-entity="FileSystemFolder" location="%workspace.home%/lib" NAME="lib"/><file-system model-entity="FileSystemFolder" location="%workspace.home%/classes" NAME="classes"/><web model-entity="JstWeb" model-path="/web.xml" SERVLET_VERSION="2.4">  <module model-entity="WebJSFModule" model-path="/faces-config.xml"   root="WEB-ROOT" src="src" URI="/WEB-INF/faces-config.xml"/></web></file-systems>
+<?xml version="1.0" encoding="UTF-8"?>
+<file-systems VERSION="2.0.0" application-name="MyApp"
+ model-entity="FileSystems" workspace-home="./src/main/webapp/WEB-INF">
+ <file-system NAME="WEB-INF" location="%workspace.home%" model-entity="FileSystemFolder"/>
+ <file-system NAME="WEB-ROOT" info="Content-Type=Web"
+  location="%workspace.home%/.." model-entity="FileSystemFolder"/>
+ <file-system NAME="src" location="%workspace.home%/../../java" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib" location="%workspace.home%/lib" model-entity="FileSystemFolder"/>
+ <file-system NAME="classes" location="%workspace.home%/classes" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-resources.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jfr.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-access-bridge-64.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\access-bridge-64.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dnsns.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaccess.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-localedata.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunec.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunjce_provider.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunmscapi.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-zipfs.jar"
+  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-junit-3.8.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\junit\junit\3.8.1\junit-3.8.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javaee-api-7.0.jar"
+  location="C:\Users\jiabin\Workspaces\repo\javax\javaee-api\7.0\javaee-api-7.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.mail-1.5.0.jar"
+  location="C:\Users\jiabin\Workspaces\repo\com\sun\mail\javax.mail\1.5.0\javax.mail-1.5.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-activation-1.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\javax\activation\activation\1.1\activation-1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat7-websocket-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat7-websocket\7.0.47\tomcat7-websocket-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-websocket-api-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-websocket-api\7.0.47\tomcat-websocket-api-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-catalina-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-catalina\7.0.47\tomcat-catalina-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-servlet-api-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-servlet-api\7.0.47\tomcat-servlet-api-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-annotations-api-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-annotations-api\7.0.47\tomcat-annotations-api-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-api-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-api\7.0.47\tomcat-api-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-coyote-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-coyote\7.0.47\tomcat-coyote-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-juli-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-juli\7.0.47\tomcat-juli-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-tomcat-util-7.0.47.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\apache\tomcat\tomcat-util\7.0.47\tomcat-util-7.0.47.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-javax.servlet-api-3.0.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\javax\servlet\javax.servlet-api\3.0.1\javax.servlet-api-3.0.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-context-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-context\4.0.1.RELEASE\spring-context-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-aop-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-aop\4.0.1.RELEASE\spring-aop-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-aopalliance-1.0.jar"
+  location="C:\Users\jiabin\Workspaces\repo\aopalliance\aopalliance\1.0\aopalliance-1.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-beans-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-beans\4.0.1.RELEASE\spring-beans-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-core-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-core\4.0.1.RELEASE\spring-core-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-logging-1.1.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-logging\commons-logging\1.1.1\commons-logging-1.1.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-expression-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-expression\4.0.1.RELEASE\spring-expression-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-webmvc-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-webmvc\4.0.1.RELEASE\spring-webmvc-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-web-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-web\4.0.1.RELEASE\spring-web-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-log4j-1.2.14.jar"
+  location="C:\Users\jiabin\Workspaces\repo\log4j\log4j\1.2.14\log4j-1.2.14.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="src-1"
+  location="%workspace.home%/../../../test/java" model-entity="FileSystemFolder"/>
+ <file-system NAME="src-2"
+  location="%workspace.home%/../../../test/resources" model-entity="FileSystemFolder"/>
+ <file-system NAME="src-3" location="%workspace.home%/../../resources" model-entity="FileSystemFolder"/>
+ <file-system NAME="lib-jackson-asl-0.9.5.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-asl\0.9.5\jackson-asl-0.9.5.jar" model-entity="FileSystemJar"/>
+ <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
+  <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
+   model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>
+ </web>
+</file-systems>
