@@ -1,0 +1,4 @@
+org\ljb\web\controller\TestController.class
+org\ljb\service\TestService.class
+org\ljb\dao\mapper\xml\testMapper.class
+org\ljb\web\webSocket\MyWebSocketServlet.class

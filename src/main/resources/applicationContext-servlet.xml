@@ -7,8 +7,10 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context.xsd">
 
-   <!-- 设置使用注解的类所在的jar包 -->
-    <context:component-scan base-package="org.ljb.web"></context:component-scan>
+       <!-- 设置使用注解的类所在的jar包 -->
+    
+    <context:component-scan base-package="org.ljb.web,org.ljb.service" >
+	</context:component-scan>
 
     <!-- 完成请求和注解POJO的映射 -->
     <bean class="org.springframework.web.servlet.mvc.annotation.AnnotationMethodHandlerAdapter" />
