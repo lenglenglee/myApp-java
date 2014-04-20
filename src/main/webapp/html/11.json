@@ -1,0 +1,83 @@
+{
+    "data":[
+        {
+            "child":[
+                
+            ],
+            "id":1,
+            "name":"首页",
+            "parentId":""
+        },
+        {
+            "child":[
+                {
+                    "child":[
+                        
+                    ],
+                    "id":21,
+                    "name":"菜单设置",
+                    "parentId":2
+                },
+                {
+                    "child":[
+                        
+                    ],
+                    "id":23,
+                    "name":"权限管理",
+                    "parentId":2
+                },
+                {
+                    "child":[
+                        
+                    ],
+                    "id":22,
+                    "name":"权限设置",
+                    "parentId":2
+                },
+                {
+                    "child":[
+                        
+                    ],
+                    "id":25,
+                    "name":"角色管理",
+                    "parentId":2
+                },
+                {
+                    "child":[
+                        
+                    ],
+                    "id":24,
+                    "name":"用户管理",
+                    "parentId":2
+                },
+                {
+                    "child":[
+                        
+                    ],
+                    "id":26,
+                    "name":"角色管理",
+                    "parentId":2
+                }
+            ],
+            "id":2,
+            "name":"系统设置",
+            "parentId":""
+        },
+        {
+            "child":[
+                
+            ],
+            "id":3,
+            "name":"测试",
+            "parentId":""
+        },
+        {
+            "child":[
+                
+            ],
+            "id":4,
+            "name":"测试",
+            "parentId":""
+        }
+    ]
+}

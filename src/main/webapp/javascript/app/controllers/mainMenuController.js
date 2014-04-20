@@ -9,6 +9,7 @@ myApp.controller('mainMenuController',function($scope){
         children:[]
     }
     var child1={
+        id:1,
         displayName:"travelChild1",
         isActive:false,
         children:[]

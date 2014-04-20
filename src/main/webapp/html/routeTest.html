@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>routeTest</title>
+    <link rel="stylesheet"  href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet"  href="../css/metronic/style-metronic.css">
+    <link rel="stylesheet" href="../css/metronic/style.css">
+    <link rel="stylesheet" href="../css/metronic/theme/light.css">
+
+    <script type="text/javascript" src="../javascript/plugin/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/angularjs/angular-sanitize.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/angularjs/angular-route.min.js"></script>
+
+    <script type="text/javascript" src="../javascript/app/utils/dateUtil.js"></script>
+
+    <script type="text/javascript" src="../javascript/app/appCore.js"></script>
+    <script type="text/javascript">
+        angular.module('myApp', ['ngRoute'])
+                .config(['$routeProvider', function($routeProvider) {
+                    $routeProvider
+                        .when('/test1', {templateUrl: 'gis.html',   controller: function(){}})
+                        .when('/test2', {templateUrl: 'MainMenu.html', controller: function(){}})
+                        .otherwise({redirectTo: '/test1'});}]);
+        function controller($scope){
+
+        }
+    </script>
+</head>
+<body ng-controller="controller">
+    <div ng-view></div>
+
+</body>
+</html>

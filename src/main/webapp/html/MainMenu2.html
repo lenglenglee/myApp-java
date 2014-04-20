@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet"  href="../css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet"  href="../css/metronic/style-metronic.css">
+    <link rel="stylesheet" href="../css/metronic/style.css">
+    <link rel="stylesheet" href="../css/metronic/theme/light.css">
+
+    <script type="text/javascript" src="../javascript/plugin/jquery/jquery-1.10.2.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/bootstrap/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/angularjs/angular.min.js"></script>
+    <script type="text/javascript" src="../javascript/plugin/angularjs/angular-sanitize.min.js"></script>
+
+    <script type="text/javascript" src="../javascript/app/utils/dateUtil.js"></script>
+
+    <script type="text/javascript" src="../javascript/app/appCore.js"></script>
+    <script type="text/javascript" >
+        myApp.controller('menuController',function($scope){
+            $scope.selected='0-1';
+            $scope.data=[
+                {
+                    id:'0',
+                    name:'test',
+                    children:[
+                        {
+                            id:'0-1',
+                            name:'testchildren',
+                            children:null
+                        }
+                    ]
+                },
+                {
+                    id:'1',
+                    name:'test',
+                    isopen:false,
+                    children:[
+                        {
+                            id:'1-1',
+                            name:'testchildren',
+                            children:null
+                        },
+                        {
+                            id:'1-2',
+                            name:'testchildren',
+                            children:null
+                        }
+                    ]
+                },
+                {
+                    id:'2',
+                    name:'test',
+                    children:[
+                        {
+                            id:'2-1',
+                            name:'testchildren',
+                            children:null
+                        }
+                    ]
+                }
+            ];
+            $scope.select= function(item){
+                $scope.selected=item.id;
+            }
+
+        })
+    </script>
+
+    <link rel="stylesheet" href="../css/sidebar.css">
+</head>
+<body>
+    <div ng-controller="menuController">
+        <div class="input-group">
+            <input class="form-control" ng-model="selected">
+            <span class="input-group-btn">
+                <button class="btn btn-primary">update</button>
+            </span>
+        </div>
+        <div class="col-md-2">
+            <ul class="sidebar">
+                <li ng-repeat="item in data" ng-class="{'open active':selected.startWith(item.id)}"  >
+                    <a ng-class="{'active':item.id==selected}" ng-click="select(item)">{{item.name}}</a>
+                    <ul  class="sub-menu">
+                        <li ng-repeat="citem in item.children" ng-class="{'open active':selected.startWith(citem.id)}" >
+                            <a ng-class="{'active selected':citem.id==selected}"  ng-click="select(citem)">{{citem.name}}</a>
+                        	<ul  class="sub-menu">
+                       		<li ng-repeat="citem in item.children" ng-class="{'open active':selected.startWith(citem.id)}" >
+                            	<a ng-class="{'active selected':citem.id==selected}"  ng-click="select(citem)">{{citem.name}}</a>
+                       		 </li>
+                   			 </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+
+    </div>
+</body>
+</html>

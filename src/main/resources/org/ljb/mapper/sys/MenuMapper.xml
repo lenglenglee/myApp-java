@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.ljb.mapper.sys.MenuMapper">
+	<insert id="addMenuItem" parameterType="org.ljb.entity.sys.Menu">
+		insert into sys_menu(id,name,displayname,parentid,sequence,useflag)
+		<choose>
+			<when test="parentId!=null">
+				select #{parentId}*10+count(id)+1,#{name},#{displayName},#{parentId},count(id)+1,#{useFlag} from sys_menu  where parentid=#{parentId};
+			</when>
+			<otherwise>
+				select count(id)+1,#{name},#{displayName},#{parentId},count(id)+1,#{useFlag} from sys_menu  where parentid is null;
+			</otherwise>
+		</choose>
+			
+	</insert>
+	
+	<select id="getMenuByUser" parameterType="Integer" resultType="org.ljb.entity.sys.Menu">
+		select * from sys_menu;
+	</select>
+	
+</mapper>

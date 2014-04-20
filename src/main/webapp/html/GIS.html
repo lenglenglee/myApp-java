@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GIS.html</title>
+	
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta name="content-type" content="text/html; charset=UTF-8">
+    
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    
+    <!-- jquery and bootstrap -->
+    <link rel="stylesheet"  href="../css/bootstrap/bootstrap.min.css">
+    <script type="text/javascript" src="../javascript/plugin/jquery/jquery-1.10.2.min.js"></script>
+	<script type="text/javascript" src="../javascript/plugin/bootstrap/bootstrap.min.js"></script>
+    
+
+    
+    <!-- leafletjs -->
+	<link rel="stylesheet" type="text/css" href="../javascript/plugin/leaflet-0.7.2/leaflet.css">
+	<script type="text/javascript" src="../javascript/plugin/leaflet-0.7.2/leaflet.js"></script>
+	
+	
+	<script type="text/javascript" src="../javascript/plugin/esri-leaflet/esri-leaflet.js"></script>
+	
+	<link rel="stylesheet" href="../javascript/plugin/Leaflet.draw/leaflet.draw.css">
+    <script src="../javascript/plugin/Leaflet.draw/leaflet.draw.js"></script>
+
+	<style type="text/css">
+		#mapDiv { 
+			width:1024px;
+			height: 768px;
+		}
+	</style>
+	<script type="text/javascript">
+	var mapInfo = {id:1,defaultMapServer:2,currentLayer:null,
+			mapServers:[{id:1,url:'http://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Tapestry/MapServer',name:'影像图',icon:'image.png',type:1},
+						{id:2,url:'http://services.arcgisonline.com/ArcGIS/rest/services/Demographics/USA_Tapestry/MapServer',name:'矢量图',icon:'vector.png',type:1}
+			]};
+	$(document).ready(function(){
+		$('#mapContainer').on('touchmove',function(e){
+			console.log(JSON.stringify(e));
+		})
+	});
+	</script>
+  </head>
+  
+  <body>
+  	
+    <div id="mapContainer" style="height: 50%">
+			<div id="mapDiv" class="mapDiv"></div>
+	</div>
+	<button id="draw" class="btn btn-primary">DRAW</button>
+  </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>test.html</title>
+
+<meta name="keywords" content="keyword1,keyword2,keyword3">
+<meta name="description" content="this is my page">
+<meta name="content-type" content="text/html; charset=UTF-8">
+
+<!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+<link rel="stylesheet" href="../css/metronic/style-metronic.css">
+<script type="text/javascript"
+	src="../javascript/plugin/jquery/jquery-1.10.2.min.js"></script>
+<script type="text/javascript"
+	src="../javascript/plugin/bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript"
+	src="../javascript/plugin/angularjs/angular.min.js"></script>
+<script type="text/javascript"
+	src="../javascript/plugin/angularjs/angular-sanitize.min.js"></script>
+
+
+<script type="text/javascript"
+	src="../javascript/plugin/bootstrap-prompts/bootbox.min.js"></script>
+<script type="text/javascript"
+	src="../javascript/plugin/bootstrap-prompts/bootstrap-prompts.js"></script>
+
+<link rel="stylesheet" href="../javascript/plugin/datetimepicker/css/bootstrap-datetimepicker.css">
+<link rel="stylesheet" href="../javascript/plugin/datetimepicker/css/bootstrap-datetimepicker-custom.css">
+<script type="text/javascript" src="../javascript/plugin/datetimepicker/bootstrap-datetimepicker.js"></script>
+<script type="text/javascript" src="../javascript/plugin/datetimepicker/locales/bootstrap-datetimepicker.zh-CN.js" charset="UTF-8"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$.post("../sys/menu/getMenuTree.do?userId=1",{},function(msg){
+			console.log(msg);
+			$("#yy").text(msg);
+		});
+	})
+	;
+</script>
+<style type="text/css">
+
+.datetimepicker  td,
+.datetimepicker th {
+	width: 40px;
+	height: 40px;
+}
+.datetimepicker .datetimepicker-hours span,.datetimepicker .datetimepicker-minutes span{
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+.datetimepicker-hours .table-condensed td,.datetimepicker-minutes .table-condensed td,
+.datetimepicker-months .table-condensed td,.datetimepicker-years .table-condensed td{
+	width:290px;
+}
+
+
+</style>
+</head>
+
+<body>
+<div class="row" style="margin-top: 100px">
+	<a class="btn btn-primary col-md-1" id="test">test</a>
+	<input class=" col-md-3" id="testinput" type="text" readonly="readonly">
+	<label id="yy"></label>
+</div>
+	
+</body>
+</html>

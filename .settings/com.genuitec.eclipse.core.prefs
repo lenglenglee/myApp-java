@@ -1,3 +1,8 @@
+clsCnt=8
 eclipse.preferences.version=1
-validator.Checked=src/main/webapp/javascript/plugin/jquery/jquery-1.10.2.min.js
+locCnt=273
+pkgCnt=13
+sTime=2014\u5E744\u670813\u65E5 \u661F\u671F\u65E5 \u4E0A\u534812\u65F623\u520612\u79D2 CST
+srcCnt=4
+validator.Checked=src/main/webapp/javascript/plugin/esri-leaflet,src/main/webapp/javascript/plugin/jquery,src/main/webapp/javascript/plugin/leaflet-0.7.2,src/main/webapp/javascript/plugin/datetimepicker
 validator.Unchecked=

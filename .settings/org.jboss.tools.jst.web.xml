@@ -7,26 +7,6 @@
  <file-system NAME="src" location="%workspace.home%/../../java" model-entity="FileSystemFolder"/>
  <file-system NAME="lib" location="%workspace.home%/lib" model-entity="FileSystemFolder"/>
  <file-system NAME="classes" location="%workspace.home%/classes" model-entity="FileSystemFolder"/>
- <file-system NAME="lib-resources.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\resources.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-jfr.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\jfr.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-access-bridge-64.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\access-bridge-64.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-dnsns.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-jaccess.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-localedata.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-sunec.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-sunjce_provider.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-sunmscapi.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
- <file-system NAME="lib-zipfs.jar"
-  location="C:\Program Files\Java\jdk1.7.0_45\jre\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
  <file-system NAME="lib-junit-3.8.1.jar"
   location="C:\Users\jiabin\Workspaces\repo\junit\junit\3.8.1\junit-3.8.1.jar" model-entity="FileSystemJar"/>
  <file-system NAME="lib-javaee-api-7.0.jar"
@@ -82,6 +62,78 @@
  <file-system NAME="src-3" location="%workspace.home%/../../resources" model-entity="FileSystemFolder"/>
  <file-system NAME="lib-jackson-asl-0.9.5.jar"
   location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-asl\0.9.5\jackson-asl-0.9.5.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-resources.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\resources.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jfr.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\jfr.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-access-bridge-64.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\access-bridge-64.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-dnsns.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\dnsns.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jaccess.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\jaccess.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-localedata.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\localedata.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunec.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\sunec.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunjce_provider.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\sunjce_provider.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-sunmscapi.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\sunmscapi.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-zipfs.jar"
+  location="C:\Users\jiabin\AppData\Local\MyEclipse for Spring 2014\binary\com.sun.java.jdk7.win32.x86_64_1.7.0.u45\jre\lib\ext\zipfs.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-pool-1.6.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-pool\commons-pool\1.6\commons-pool-1.6.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-dbcp-1.4.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-dbcp\commons-dbcp\1.4\commons-dbcp-1.4.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-collections-3.2.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-collections\commons-collections\3.2.1\commons-collections-3.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-lang-2.5.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-lang\commons-lang\2.5\commons-lang-2.5.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-commons-beanutils-1.8.0.jar"
+  location="C:\Users\jiabin\Workspaces\repo\commons-beanutils\commons-beanutils\1.8.0\commons-beanutils-1.8.0.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-json-lib-2.4-jdk15.jar"
+  location="C:\Users\jiabin\Workspaces\repo\net\sf\json-lib\json-lib\2.4\json-lib-2.4-jdk15.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ezmorph-1.0.6.jar"
+  location="C:\Users\jiabin\Workspaces\repo\net\sf\ezmorph\ezmorph\1.0.6\ezmorph-1.0.6.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-asm-4.2.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\ow2\asm\asm\4.2\asm-4.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-asm-util-4.2.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\ow2\asm\asm-util\4.2\asm-util-4.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-asm-tree-4.2.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\ow2\asm\asm-tree\4.2\asm-tree-4.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-ant-1.6.2.jar"
+  location="C:\Users\jiabin\Workspaces\repo\ant\ant\1.6.2\ant-1.6.2.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-cglib-3.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\cglib\cglib\3.1\cglib-3.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mysql-connector-java-5.1.29.jar"
+  location="C:\Users\jiabin\Workspaces\repo\mysql\mysql-connector-java\5.1.29\mysql-connector-java-5.1.29.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-orm-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-orm\4.0.1.RELEASE\spring-orm-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-jdbc-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-jdbc\4.0.1.RELEASE\spring-jdbc-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-tx-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-tx\4.0.1.RELEASE\spring-tx-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-spring-test-4.0.1.RELEASE.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\springframework\spring-test\4.0.1.RELEASE\spring-test-4.0.1.RELEASE.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-3.2.3.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\mybatis\mybatis\3.2.3\mybatis-3.2.3.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-mybatis-spring-1.2.1.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\mybatis\mybatis-spring\1.2.1\mybatis-spring-1.2.1.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-lgpl-0.9.5.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-lgpl\0.9.5\jackson-lgpl-0.9.5.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-asl-1.9.13.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-mapper-asl\1.9.13\jackson-mapper-asl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-asl-1.9.13.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-core-asl\1.9.13\jackson-core-asl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-lgpl-1.9.13.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-mapper-lgpl\1.9.13\jackson-mapper-lgpl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-lgpl-1.9.13.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-core-lgpl\1.9.13\jackson-core-lgpl-1.9.13.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-core-asl-1.8.5.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-core-asl\1.8.5\jackson-core-asl-1.8.5.jar" model-entity="FileSystemJar"/>
+ <file-system NAME="lib-jackson-mapper-asl-1.8.5.jar"
+  location="C:\Users\jiabin\Workspaces\repo\org\codehaus\jackson\jackson-mapper-asl\1.8.5\jackson-mapper-asl-1.8.5.jar" model-entity="FileSystemJar"/>
  <web SERVLET_VERSION="2.4" model-entity="JstWeb" model-path="/web.xml">
   <module URI="/WEB-INF/faces-config.xml" model-entity="WebJSFModule"
    model-path="/faces-config.xml" src="src" web-root="WEB-ROOT"/>

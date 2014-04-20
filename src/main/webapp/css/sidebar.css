@@ -1,0 +1,30 @@
+ul.sidebar{
+	list-style-type:none;
+	padding-left:0px;
+    margin-bottom: 20px;
+}
+
+
+ul.sidebar li>a{
+    position: relative;
+    display: block;
+    padding: 10px 15px;
+    margin-bottom: -1px;
+    background-color: #ffffff;
+    border: 1px solid #dddddd;
+}
+ul.sidebar li>a:hover{
+    text-decoration: none;
+    background-color: #f5f5f5;
+}
+ul.sidebar li>ul>li>a{
+    padding-left: 10%;
+}
+ul.sidebar li.open>ul{
+    display: block;
+}
+ul.sidebar li>ul{
+    display: none;
+    padding-left:0px;
+    list-style-type:none;
+}

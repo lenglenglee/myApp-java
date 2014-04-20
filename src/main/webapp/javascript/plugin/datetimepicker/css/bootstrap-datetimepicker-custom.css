@@ -1,0 +1,15 @@
+.datetimepicker  td,
+.datetimepicker th {
+	width: 40px;
+	height: 40px;
+}
+.datetimepicker .datetimepicker-hours span,.datetimepicker .datetimepicker-minutes span{
+	height: 40px;
+	line-height: 40px;
+	
+}
+
+.datetimepicker-hours .table-condensed td,.datetimepicker-minutes .table-condensed td,
+.datetimepicker-months .table-condensed td,.datetimepicker-years .table-condensed td{
+	width:290px;
+}
